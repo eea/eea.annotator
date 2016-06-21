@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<object name="portal_css">
+  <stylesheet id="++resource++eea.annotator.view.css" expression="python:portal.portal_membership.checkPermission('eea.annotator: View', object) and (here.restrictedTraverse('@@plone_context_state').is_view_template() or 'edit' in request.URL0.split('/')[-1])" />
+  <stylesheet id="++resource++eea.annotator.edit.css" expression="python:portal.portal_membership.checkPermission('eea.annotator: View', object) and 'edit' in request.URL0" />
+</object>

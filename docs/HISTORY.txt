@@ -3,7 +3,17 @@ Changelog
 
 3.5.dev0 - (unreleased)
 -----------------------
-* Bug fix: Update classifiers, not Plone 5 compatible yet
+* Change: Add dual Plone 4 and 5 support for custom portlet
+  [davilima6]
+
+* Change: Add extra GS profiles to support Plone 4 and 5 in the same branch
+  [davilima6]
+
+* Change: Load resource dependencies in legacy bundle, enabling full
+  compatibility with Plone 5
+  [davilima6]
+
+* Change: Migrate configlet, portlet and content rule from formlib to z3c.form
   [davilima6]
 
 3.4 - (2016-05-19)

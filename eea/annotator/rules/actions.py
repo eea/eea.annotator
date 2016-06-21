@@ -11,6 +11,7 @@ from plone.app.contentrules.browser.formhelper import EditForm as PloneEditForm
 from eea.annotator.rules.interfaces import IAnnotatorAction
 from eea.annotator.interfaces import IAnnotatorStorage
 
+
 class AnnotatorAction(SimpleItem):
     """ Action settings
     """
@@ -47,10 +48,11 @@ class AnnotatorActionExecutor(object):
 
         return True
 
+
 class AddForm(PloneAddForm):
     """ Action add form
     """
-    form_fields = form.FormFields(IAnnotatorAction)
+    schema = IAnnotatorAction
     label = u"Add Inline Comments action"
     description = u"A annotator action."
     form_name = u"Enable/disable inline comments"
@@ -66,7 +68,7 @@ class AddForm(PloneAddForm):
 class EditForm(PloneEditForm):
     """ Action edit form
     """
-    form_fields = form.FormFields(IAnnotatorAction)
+    schema = IAnnotatorAction
     label = u"Edit Inline Comments action"
     description = u"A annotator action."
     form_name = u"Enable/disable inline comments"

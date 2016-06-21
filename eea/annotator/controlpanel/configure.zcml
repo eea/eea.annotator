@@ -3,18 +3,13 @@
   xmlns:browser="http://namespaces.zope.org/browser"
   i18n_domain="eea">
 
-  <include package="Products.CMFCore" file="permissions.zcml"/>
+  <include package="Products.CMFCore" file="permissions.zcml" />
 
   <browser:page
-    name="annotator-controlpanel"
-    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-    class=".settings.ControlPanel"
-    permission="cmf.ManagePortal"
-    />
-
-  <adapter
-    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-    provides="eea.annotator.interfaces.ISettings"
-    factory=".settings.ControlPanelAdapter" />
+      name="annotator-controlpanel"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".settings.ControlPanel"
+      permission="cmf.ManagePortal"
+      />
 
 </configure>

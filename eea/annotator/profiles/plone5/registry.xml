@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<registry>
+
+  <records prefix="plone.resources/eea.annotator"
+      interface="Products.CMFPlone.interfaces.IResourceRegistry">
+    <value key="js">++resource++eea.annotator.view.js</value> <!-- python:portal.portal_membership.checkPermission('eea.annotator: View', object) and (here.restrictedTraverse('@@plone_context_state').is_view_template() or 'edit' in request.URL0.split('/')[-1]) -->
+      <value key="css">
+        <element>++resource++eea.annotator.view.css</element> <!-- python:portal.portal_membership.checkPermission('eea.annotator: View', object) and (here.restrictedTraverse('@@plone_context_state').is_view_template() or 'edit' in request.URL0.split('/')[-1]) -->
+        <element>++resource++eea.annotator.edit.css</element> <!-- python:portal.portal_membership.checkPermission('eea.annotator: View', object) and 'edit' in request.URL0 -->
+      </value>
+  </records>
+
+  <records prefix="plone.bundles/eea.annotator"
+      interface="Products.CMFPlone.interfaces.IBundleRegistry" purge="False">
+    <value key="resources">
+      <element>resource-plone-app-jquerytools-js</element>
+      <element>annotator</element>
+      <element>eea.annotator</element>
+    </value>
+    <value key="jscompilation">++resource++eea.annotator.compiled/annotator-bundle-compiled.js</value>
+    <value key="csscompilation">++resource++eea.annotator.compiled/annotator-bundle-compiled.css</value>
+    <value key="last_compilation">2016-06-22 00:00:00</value>
+    <value key="depends">plone-legacy</value>
+    <value key="stub_js_modules">
+      <element>jquery</element>
+    </value>
+  </records>
+
+</registry>

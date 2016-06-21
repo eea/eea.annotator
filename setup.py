@@ -19,12 +19,13 @@ setup(name=NAME,
           "Framework :: Zope3",
           "Framework :: Plone",
           "Framework :: Plone :: 4.3",
+          "Framework :: Plone :: 5.0",
           "Programming Language :: Zope",
           "Programming Language :: Python",
           "Topic :: Software Development :: Libraries :: Python Modules",
           "License :: OSI Approved :: GNU General Public License (GPL)",
           "License :: OSI Approved :: Mozilla Public License 1.0 (MPL)",
-        ],
+      ],
       keywords='eea zope plone python',
       author='European Environment Agency',
       author_email='webadmin@eea.europa.eu',
@@ -39,6 +40,7 @@ setup(name=NAME,
           # -*- Extra requirements: -*-
           'eea.jquery > 6.6',
           'eea.icons',
+          'plone.autoform'
       ],
       entry_points="""
       # -*- entry_points -*-

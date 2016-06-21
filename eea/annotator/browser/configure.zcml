@@ -94,6 +94,10 @@
    />
 
   <browser:resourceDirectory
+    name="eea.annotator.compiled"
+    directory="./compiled" />
+
+  <browser:resourceDirectory
     name="eea.annotator.images"
     directory="./img" />
 

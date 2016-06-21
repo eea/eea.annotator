@@ -1,4 +1,7 @@
 <?xml version="1.0"?>
 <registry>
+
+  <!-- Initialize control panel configuration in registry -->
   <records interface="eea.annotator.controlpanel.interfaces.ISettings" />
+
 </registry>

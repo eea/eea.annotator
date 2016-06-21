@@ -4,9 +4,13 @@
    >>> sandbox = portal['sandbox']
 
 """
+
+from z3c.form.browser.checkbox import CheckBoxFieldWidget
 from zope.interface import Interface
 from zope import schema
+from plone.autoform import directives as aform
 from eea.annotator.config import EEAMessageFactory as _
+
 
 class ISettings(Interface):
     """ Settings
@@ -17,6 +21,7 @@ class ISettings(Interface):
         [u'Document', u'News Item']
 
     """
+    aform.widget('portalTypes', CheckBoxFieldWidget)
     portalTypes = schema.List(
         title=_(u"Enable inline comments"),
         description=_(u"Annotator inline comments are enabled for the "
@@ -42,7 +47,7 @@ class ISettings(Interface):
         title=_(u"Minimum number of words"),
         description=_(u"Force user to select at least this number of words "
                       u"while adding an inline comment"
-        ),
+                      ),
         required=False,
         default=0
     )

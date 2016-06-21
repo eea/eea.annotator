@@ -1,21 +1,20 @@
 <configure
-  xmlns="http://namespaces.zope.org/zope"
-  xmlns:browser="http://namespaces.zope.org/browser"
-  xmlns:plone="http://namespaces.plone.org/plone"
-  xmlns:zcml="http://namespaces.zope.org/zcml"
-  >
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:zcml="http://namespaces.zope.org/zcml">
 
   <include package="plone.app.portlets" file="permissions.zcml" />
 
   <plone:portlet
-    name="portlets.AnnotatorInlineComments"
-    interface=".annotator.IAnnotatorPortlet"
-    assignment=".annotator.Assignment"
-    renderer=".annotator.Renderer"
-    addview=".annotator.AddForm"
-    editview=".annotator.EditForm"
-    edit_permission="plone.app.portlets.ManagePortlets"
-    view_permission="zope2.View"
-    />
+      name="portlets.AnnotatorInlineComments"
+      interface=".annotator.IAnnotatorPortlet"
+      assignment=".annotator.Assignment"
+      renderer=".annotator.Renderer"
+      addview=".annotator.AddForm"
+      editview=".annotator.EditForm"
+      edit_permission="plone.app.portlets.ManagePortlets"
+      view_permission="zope2.View"
+      />
 
 </configure>
