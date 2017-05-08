@@ -4,9 +4,9 @@
     >>> sandbox = portal['sandbox']
 
 """
+from zope import schema
 from zope.interface import Interface
 from eea.annotator.config import EEAMessageFactory as _
-from zope import schema
 
 class IAnnotatorStorage(Interface):
     """ Access/Update annotator configuration

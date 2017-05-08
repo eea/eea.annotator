@@ -5,16 +5,15 @@ from zope.interface import Interface
 from zope.component import queryMultiAdapter
 from zope.component import adapts
 from eea.annotator.interfaces import ILayer
-
 from ZPublisher.BaseRequest import DefaultPublishTraverse
-from plone.app.imaging.interfaces import IBaseObject
-
+from eea.annotator.interfaces import IAnnotatorAware
+from eea.annotator.browser.interfaces import IAnnotatorAPI
 try:
     from eea.depiction import traverse
     ScaleTraverser = traverse.ScaleTraverser
 except (ImportError, AttributeError), err:
     from plone.app.imaging.traverse import ImageTraverser as ScaleTraverser
-
+from plone.app.imaging.interfaces import IBaseObject
 try:
     from plone.dexterity import interfaces
     IDexterityContent = interfaces.IDexterityContent
@@ -24,10 +23,7 @@ except (ImportError, AttributeError), err:
     DexterityPublishTraverse = ScaleTraverser
     class IDexterityContent(Interface):
         """ Fallback
-        """
-
-from eea.annotator.interfaces import IAnnotatorAware
-from eea.annotator.browser.interfaces import IAnnotatorAPI
+        """        
 
 logger = logging.getLogger('eea.annotator')
 

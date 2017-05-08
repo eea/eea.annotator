@@ -2,21 +2,19 @@
 """
 import json
 import hashlib
-from zope.event import notify
 from datetime import datetime
-from persistent.dict import PersistentDict
+from zope.event import notify
 from zope.interface import implements
 from zope.annotation.interfaces import IAnnotations
+from persistent.dict import PersistentDict
 from Products.CMFCore.utils import getToolByName
 from eea.annotator.interfaces import IAnnotatorStorage
-
 from eea.annotator.events.comment import InlineCommentAdded
 from eea.annotator.events.comment import InlineCommentClosed
 from eea.annotator.events.comment import InlineCommentOpened
 from eea.annotator.events.comment import InlineCommentDeleted
 from eea.annotator.events.comment import InlineCommentModified
 from eea.annotator.events.comment import InlineCommentReply
-
 from eea.annotator.config import PROJECTNAME
 from eea.annotator.config import EEAMessageFactory as _
 
