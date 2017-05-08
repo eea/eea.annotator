@@ -4,8 +4,8 @@ import logging
 from zope.interface import Interface
 from zope.component import queryMultiAdapter
 from zope.component import adapts
-from eea.annotator.interfaces import ILayer
 from ZPublisher.BaseRequest import DefaultPublishTraverse
+from eea.annotator.interfaces import ILayer
 from eea.annotator.interfaces import IAnnotatorAware
 from eea.annotator.browser.interfaces import IAnnotatorAPI
 try:
@@ -23,7 +23,7 @@ except (ImportError, AttributeError), err:
     DexterityPublishTraverse = ScaleTraverser
     class IDexterityContent(Interface):
         """ Fallback
-        """        
+        """
 
 logger = logging.getLogger('eea.annotator')
 
