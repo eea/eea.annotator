@@ -120,9 +120,8 @@ class Annotations(BrowserView):
             return self.update
         elif self.request.method == 'DELETE':
             return self.delete
-        else:
-            self.request.form['name'] = name
-            return self.read
+        self.request.form['name'] = name
+        return self.read
 
     def __call__(self, **kwargs):
         method = self.request.method
