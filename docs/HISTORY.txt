@@ -3,6 +3,8 @@ Changelog
 
 3.9.dev0 - (unreleased)
 -----------------------
+* Bug fix: fixed depiction for Dexterity content type
+  [zoltan_andras refs #81209]
 
 3.8 - (2017-05-15)
 ------------------
