@@ -77,8 +77,8 @@
 
     <div class="formControls">
       <input type="hidden" name="id" tal:attributes="value comment/id" />
-      <input class="context" type="submit" name="form.button.save" value="Save" />
-      <input class="context" type="submit" name="form.button.cancel" value="Cancel" />
+      <input class="context" type="submit" name="form.button.save" value="Save" i18n:attributes="value" />
+      <input class="context" type="submit" name="form.button.cancel" value="Cancel" i18n:attributes="value" />
     </div>
 
   </form>
