@@ -1,10 +1,8 @@
-======================
+=============
 EEA Annotator
-======================
-.. image:: http://ci.eionet.europa.eu/job/eea.annotator-www/badge/icon
-  :target: http://ci.eionet.europa.eu/job/eea.annotator-www/lastBuild
-.. image:: http://ci.eionet.europa.eu/job/eea.annotator-plone4/badge/icon
-  :target: http://ci.eionet.europa.eu/job/eea.annotator-plone4/lastBuild
+=============
+.. image:: http://ci.eionet.europa.eu/job/eea/job/eea.annotator/job/master/badge/icon
+  :target: http://ci.eionet.europa.eu/job/eea/job/eea.annotator/job/master/display/redirect
 
 EEA Annotator is the Plone integration of http://okfnlabs.org/annotator/ which
 allows your editors to easily collaborate on a Plone document by adding
