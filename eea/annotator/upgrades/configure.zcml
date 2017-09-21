@@ -7,7 +7,7 @@
   <genericsetup:upgradeSteps
     source="2.6"
     destination="4.0"
-    profile="eea.annotator:install-base">
+    profile="eea.annotator:default">
 
     <genericsetup:upgradeDepends
       title="Import steps with changes: plone.app.registry"
