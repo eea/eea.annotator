@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <metadata>
-  <version>2.6</version>
+  <version>4.0</version>
   <dependencies>
     <dependency>profile-eea.annotator:install-base</dependency>
   </dependencies>
