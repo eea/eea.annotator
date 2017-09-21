@@ -3,7 +3,20 @@
   xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
   i18n_domain="eea">
 
-  <!-- 2.1 => 2.3 -->
+  <!-- 2.6 => 4.0 -->
+  <genericsetup:upgradeSteps
+    source="2.6"
+    destination="4.0"
+    profile="eea.annotator:default">
+
+    <genericsetup:upgradeDepends
+      title="Import steps with changes: plone.app.registry"
+      import_steps="plone.app.registry"
+      />
+
+  </genericsetup:upgradeSteps>
+
+  <!-- 2.3 => 2.6 -->
   <genericsetup:upgradeSteps
     source="2.3"
     destination="2.6"
