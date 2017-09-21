@@ -64,6 +64,12 @@ class Annotator(common.ViewletBase):
         return self.settings.minWords or 0
 
     @property
+    def exactMatch(self):
+        """ Exact match
+        """
+        return self.settings.exactMatch or False
+
+    @property
     def noDuplicates(self):
         """ Don't allow duplicates
         """

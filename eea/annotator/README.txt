@@ -1,6 +1,6 @@
-================
+=============
 EEA Annotator
-================
+=============
 EEA Annotator
 
 .. contents::
@@ -14,9 +14,9 @@ Installation
 Getting started
 ===============
 
-1.
-2.
-3.
+1. Configure Inline comments via Site Setup > EEA Annotator Settings
+2. Go to Manage Portlets and add an Inline comments portlet
+3. Go to a Document view, select text and add start adding inline comments
 
 Authors
 =======

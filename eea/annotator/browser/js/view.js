@@ -197,6 +197,7 @@ EEA.Annotator = function(context, options){
   self.settings = {
     readOnly: self.context.data('readonly') || 0,
     autoSync: self.context.data('autosync') || 0,
+    exactMatch: self.context.data('exactmatch') || false,
     noDuplicates: self.context.data('noduplicates') || false,
     minWords: self.context.data('minwords') || 0,
     authenticator: authenticator,
@@ -263,7 +264,7 @@ EEA.Annotator.prototype = {
     // Init annotator
     self.target.annotator({
       readOnly: Boolean(self.settings.readOnly),
-      exactMatch: true,
+      exactMatch: Boolean(self.settings.exactMatch),
       noDuplicates: Boolean(self.settings.noDuplicates),
       minWords: parseInt(self.settings.minWords, 10),
       authenticator: self.settings.authenticator

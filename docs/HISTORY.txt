@@ -3,6 +3,8 @@ Changelog
 
 4.0.dev0 - (unreleased)
 -----------------------
+* Feature: Possibility to disable 'exactMatch' per content-type
+  [avoinea refs #88339]
 
 3.9 - (2017-08-16)
 ------------------

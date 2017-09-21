@@ -54,3 +54,13 @@ class ControlPanelAdapter(object):
         if isinstance(enabled_types, list) and context_type in enabled_types:
             return False
         return True
+
+    @property
+    def exactMatch(self):
+        """ Check if exact-match is enabled for current context
+        """
+        context_type = getattr(self.context, 'portal_type', None)
+        no_exact_match = self.settings.noExactMatch if self.settings else None
+        if isinstance(no_exact_match, list) and context_type in no_exact_match:
+            return False
+        return True

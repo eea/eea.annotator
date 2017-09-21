@@ -19,6 +19,9 @@ class ISettings(Interface):
         >>> ISettings(portal).portalTypes
         [u'Document']
 
+        >>> ISettings(portal).noExactMatch
+        []
+
     """
     aform.widget('portalTypes', CheckBoxFieldWidget)
     portalTypes = schema.List(
@@ -27,6 +30,18 @@ class ISettings(Interface):
                       u"following content-types"),
         required=False,
         default=[u"Document"],
+        value_type=schema.Choice(
+            vocabulary=u"plone.app.vocabularies.ReallyUserFriendlyTypes")
+    )
+
+    aform.widget('noExactMatch', CheckBoxFieldWidget)
+    noExactMatch = schema.List(
+        title=_(u"Disable exact-match"),
+        description=_(u"Do not apply 'exact-match' for the following "
+                      u"content-types. Useful for content-types with "
+                      u"complex/aggregated default views"),
+        required=False,
+        default=[],
         value_type=schema.Choice(
             vocabulary=u"plone.app.vocabularies.ReallyUserFriendlyTypes")
     )

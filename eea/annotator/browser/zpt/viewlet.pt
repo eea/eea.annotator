@@ -1,6 +1,7 @@
 <div class="eea-annotator" tal:attributes="
   data-readonly python:int(view.readOnly);
   data-autosync python:int(view.autoSync);
+  data-exactmatch python:int(view.exactMatch);
   data-noduplicates python:int(view.noDuplicates);
   data-minwords python:int(view.minWords);
   data-userid python:view.userid;
