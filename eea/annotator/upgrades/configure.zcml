@@ -11,6 +11,7 @@
 
     <genericsetup:upgradeDepends
       title="Import steps with changes: plone.app.registry"
+      import_profile="eea.annotator:install-base"
       import_steps="plone.app.registry"
       />
 
