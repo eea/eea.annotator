@@ -1,8 +1,8 @@
 Changelog
 =========
 
-4.0.dev0 - (unreleased)
------------------------
+4.0 - (2017-09-26)
+------------------
 * Upgrade step: Within "Plone > Site setup > Add-ons" click on
   upgrade button available for EEA Annotator
 * Feature: Possibility to disable 'exactMatch' per content-type
