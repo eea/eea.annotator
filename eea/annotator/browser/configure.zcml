@@ -65,10 +65,19 @@
 
   <browser:page
     name="annotations_search"
+    allowed_attributes="is_enabled"
     for="eea.annotator.browser.interfaces.IAnnotatorAPI"
     class=".app.view.AnnotationsSearch"
     permission="eea.annotator.view"
     />
+
+  <browser:page
+    name="annotations_settings"
+    for="eea.annotator.interfaces.IAnnotatorAware"
+    layer="eea.annotator.interfaces.ILayer"
+    class=".app.view.AnnotationSettings"
+    permission="zope2.View"
+  />
 
   <browser:viewlet
     name="eea.annotator"

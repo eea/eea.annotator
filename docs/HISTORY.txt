@@ -3,6 +3,9 @@ Changelog
 
 4.3.dev0 - (unreleased)
 -----------------------
+* Feature: added annotations_settings browserView now having a method to check
+  if inline annotations is enabled for the given context
+  [ichim-david refs #91577]
 
 4.2 - (2017-12-12)
 ------------------
