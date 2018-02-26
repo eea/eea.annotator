@@ -3,6 +3,9 @@ Changelog
 
 4.3.dev0 - (unreleased)
 -----------------------
+* Bug fix: avoid errors for annotation portlet if tinyMCE doesn't have an active
+  editor
+  [ichim-david refs #91577]
 * Feature: added annotations_settings browserView now having a method to check
   if inline annotations is enabled for the given context
   [ichim-david refs #91577]
