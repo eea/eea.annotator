@@ -65,7 +65,6 @@
 
   <browser:page
     name="annotations_search"
-    allowed_attributes="is_enabled"
     for="eea.annotator.browser.interfaces.IAnnotatorAPI"
     class=".app.view.AnnotationsSearch"
     permission="eea.annotator.view"
@@ -73,6 +72,7 @@
 
   <browser:page
     name="annotations_settings"
+    allowed_attributes="is_enabled"
     for="eea.annotator.interfaces.IAnnotatorAware"
     layer="eea.annotator.interfaces.ILayer"
     class=".app.view.AnnotationSettings"
