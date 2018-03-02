@@ -3,6 +3,7 @@ Changelog
 
 4.2.dev0 - (unreleased)
 -----------------------
+* Uninstall profile fixes. [thet]
 * Change: Replace eeacms/zptlint with eeacms/plone-test:4 zptlint
   [avoinea refs #90415]
 * Change: Remove unused css
