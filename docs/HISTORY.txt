@@ -3,6 +3,8 @@ Changelog
 
 4.3.dev0 - (unreleased)
 -----------------------
+* Uninstall profile fixes. 
+  [thet]
 * Bug fix: avoid errors for annotation portlet if tinyMCE doesn't have an active
   editor
   [ichim-david refs #91577]
