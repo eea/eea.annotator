@@ -1,9 +1,19 @@
 Changelog
 =========
 
-4.2.dev0 - (unreleased)
+4.3.dev0 - (unreleased)
 -----------------------
-* Uninstall profile fixes. [thet]
+* Uninstall profile fixes. 
+  [thet]
+* Bug fix: avoid errors for annotation portlet if tinyMCE doesn't have an active
+  editor
+  [ichim-david refs #91577]
+* Feature: added annotations_settings browserView now having a method to check
+  if inline annotations is enabled for the given context
+  [ichim-david refs #91577]
+
+4.2 - (2017-12-12)
+------------------
 * Change: Replace eeacms/zptlint with eeacms/plone-test:4 zptlint
   [avoinea refs #90415]
 * Change: Remove unused css
