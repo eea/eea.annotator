@@ -476,8 +476,10 @@ EEA.AnnotatorPortlet.prototype = {
         var ed = tinymce.activeEditor;
 
         // Move caret to beginning of text
-        ed.execCommand('SelectAll');
-        ed.selection.collapse(true);
+        if (ed) {
+          ed.execCommand('SelectAll');
+          ed.selection.collapse(true);
+        }
       }
     });
 

@@ -70,6 +70,15 @@
     permission="eea.annotator.view"
     />
 
+  <browser:page
+    name="annotations_settings"
+    allowed_attributes="is_enabled"
+    for="eea.annotator.interfaces.IAnnotatorAware"
+    layer="eea.annotator.interfaces.ILayer"
+    class=".app.view.AnnotationSettings"
+    permission="zope2.View"
+  />
+
   <browser:viewlet
     name="eea.annotator"
     layer="eea.annotator.interfaces.ILayer"

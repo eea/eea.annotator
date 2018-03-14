@@ -1,12 +1,9 @@
 <?xml version="1.0"?>
 <object name="portal_controlpanel">
-
   <configlet
-    title="EEA Annotator Settings"
-    action_id="eea.annotator.settings"
-    appId="eea.annotator"
-    remove="True">
-      <permission>Manage portal</permission>
-  </configlet>
-
+      remove="True"
+      action_id="eea.annotator.settings"
+      appId="eea.annotator"
+      title="EEA Annotator Settings"
+      />
 </object>

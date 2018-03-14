@@ -3,6 +3,8 @@
 import json
 import logging
 import hashlib
+
+from eea.annotator.controlpanel.interfaces import ISettings
 from zope.event import notify
 from zope.interface import implements, implementer
 from zope.component import queryMultiAdapter, queryAdapter
@@ -205,3 +207,21 @@ class AnnotationsSearch(BrowserView):
             'total': 0,
             'rows': []
             }, self.request.response)
+
+
+class AnnotationSettings(BrowserView):
+    """ EEA Annotator Settings
+    """
+
+    def __init__(self, context, request):
+        super(AnnotationSettings, self).__init__(context, request)
+        self.context = context
+        self.request = request
+
+    def is_enabled(self):
+        """
+        :return: Boolean if annotation is enabled or not for given context
+        :rtype: Boolean
+        """
+        settings = ISettings(self.context)
+        return False if settings.disabled else True
