@@ -646,10 +646,7 @@ jQuery(document).ready(function(){
   // Annotator
   var items = jQuery(".eea-annotator");
   if(items.length){
-    var baseurl = jQuery('base').attr('href');
-    if(!baseurl){
-      baseurl = jQuery('body').data('base-url');
-    }
+    var baseurl = jQuery('body').data('base-url') || jQuery('base').attr('href') || '';
     if(baseurl.endsWith("/")){
       baseurl = baseurl.substring(0, baseurl.length - 1);
     }
