@@ -1,14 +1,18 @@
 =============
 EEA Annotator
 =============
-.. image:: http://ci.eionet.europa.eu/job/eea/job/eea.annotator/job/master/badge/icon
-  :target: http://ci.eionet.europa.eu/job/eea/job/eea.annotator/job/master/display/redirect
+.. image:: https://ci.eionet.europa.eu/buildStatus/icon?job=eea/eea.annotator/develop
+  :target: https://ci.eionet.europa.eu/job/eea/job/eea.annotator/job/develop/display/redirect
+  :alt: Develop
+.. image:: https://ci.eionet.europa.eu/buildStatus/icon?job=eea/eea.annotator/master
+  :target: https://ci.eionet.europa.eu/job/eea/job/eea.annotator/job/master/display/redirect
+  :alt: Master
 
 EEA Annotator is the Plone integration of http://okfnlabs.org/annotator/ which
 allows your editors to easily collaborate on a Plone document by adding
 annotations (inline comments) on it.
 
-.. image:: http://eea.github.io/_images/eea.annotator.cover.png
+.. image:: https://eea.github.io/_images/eea.annotator.cover.png
    :target: http://www.youtube.com/watch?v=UExygLRqjkc&list=PLVPSQz7ahsBxXe_sM7Cx2BnOoxkt3pnbw&feature=share
 
 Contents
@@ -117,4 +121,4 @@ Funding
 
 EEA_ - European Environment Agency (EU)
 
-.. _EEA: http://www.eea.europa.eu/
+.. _EEA: https://www.eea.europa.eu/
