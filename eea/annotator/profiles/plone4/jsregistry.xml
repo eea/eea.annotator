@@ -3,4 +3,3 @@
   <javascript id="++resource++eea.annotator.view.js"
   expression="python:portal.portal_membership.checkPermission('eea.annotator: View', object) and (here.restrictedTraverse('@@plone_context_state').is_view_template() or 'edit' in request.URL0.split('/')[-1])"/>
 </object>
-python: context.restrictedTraverse('@@miniheader_content_types')() and (here.restrictedTraverse('@@plone_context_state').is_view_template())
